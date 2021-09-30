@@ -73,5 +73,7 @@
     add create type standarization
     npm run flow
 
+    clash with eslint and become unsolvable?
+
 ### CONCLUSION
 22. Next Steps
