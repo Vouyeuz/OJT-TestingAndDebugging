@@ -1,0 +1,11 @@
+.card-content {
+  height: 225px;
+}
+
+
+
+/* !npm i --save-dev flow-bin */
+/* ! open package, add flow: flow to script */
+/* !npm run flow init */
+/* !add comment //@flow on top of every file target */
+/* !npm run flow */
