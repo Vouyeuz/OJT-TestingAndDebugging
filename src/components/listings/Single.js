@@ -1,7 +1,23 @@
+// @flow
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
-const Single = ({item}) => {
+
+// !standarization
+type Item = {
+  item: {
+    id: Number,
+    title: String,
+    category: String,
+    description: String,
+    link: String,
+    release_date: String,
+    views: String,
+    image: String,
+  }
+}
+
+const Single = ({item}: Item) => {
   return (
     <li className="col l6 s12">
       <div className="card">
@@ -29,8 +45,8 @@ const Single = ({item}) => {
   );
 };
 
-Single.propTypes = {
-  item: PropTypes.object.isRequired
-};
+// Single.propTypes = {
+//   item: PropTypes.object.isRequired
+// };
 
 export default Single;

@@ -1,68 +1,77 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# OJT 
+## React Testing and Debugging
+### INTRODUCTION
+01. Testing and Debugging Your React Apps
+02. Course Prerequesites
 
-## Available Scripts
+### 1. SETTING UP
+03. Your Test Project
+04. An Overview of Your Toolset
+05. React Developer Tools
+06. Jest Introduction
+07. Type Checking With Flow
+08. Linting With ESLint
 
-In the project directory, you can run:
+### 2. TESTING WITH JEST
+09. Test Numbers With Matchers
+10. Test String With Matchers
+11. Test Arrays and Objects With Matchers
+12. Snapshot Testing With Jest
 
-### `npm start`
+    To make snapshot of certain test target, any future change in code will be notified, press 'u' if want to updated the snapshot.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+13. Organize Your Test With Describe
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+    Just organize inside code, nothing change in terminal. Unlike mocha.
 
-### `npm test`
+14. Code Coverage reports 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Provide more complex results for performance optimazation. Currently can't interpret it hehe
 
-### `npm run build`
+### 3. DEBUGGING WITH CHROME AND EXTENSIONS
+15. Debug With Chrome Introduction
+16. Debug With React DevTools
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Component & Profiler.
+    Component => click component to see its props, state, render, source. And go to console while choosing either component and type $r. and choose what methods you want to inspect.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+    Profiler => record and reload or interact with app, you can saw its render performances per/ms
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+17. Test Your Network and Performance
 
-### `npm run eject`
+    Network for manipulate and inspect loading time.
+    Performance just like Profiler but seems more complex.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+18. Run a Audit in Chrome
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    F12 => Lighthouse => generate audit for mobile or desktop webapp performances
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+19. Debug Resources To Find Answers
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    1. google.com => google it
+    2. stackoverflow.com => search n ask
+    3. reactiflux.com => community
+    4. reactjs.org => issues
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4. ESLINT AND TYPES
+20. Code Improvement With ESLint
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    linter for industries standard.
+    1. open terminal => problems tag => choose problem to inspect, if bulp sign available, right-click and choose fix all.
 
-### Code Splitting
+    2. inside file => hover mouse on underlined code, press ctrl+. and fix if possible or search for documentations option.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+    3. if can't be fixed, just disabled it for certain line or entire file.
 
-### Analyzing the Bundle Size
+21. Type Checking With Flow
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+    npm i --save-dev flow-bin 
+    open package, add flow: flow to script 
+    npm run flow init 
+    add comment //@flow on top of every file target 
+    add create type standarization
+    npm run flow
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### CONCLUSION
+22. Next Steps
